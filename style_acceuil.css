@@ -1,0 +1,245 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+nav.sticky{
+  padding: 15px 20px;
+  background: #4070f4;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 4000;
+}
+nav .nav-content{
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+nav.sticky .logo a{
+  color: #fff;
+}
+.nav-content .nav-links{
+  display: flex;
+}
+.nav-content .nav-links li{
+  list-style: none;
+  margin: 0 8px;
+}
+ .nav-links li a{
+  text-decoration: none;
+  color: #0E2431;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+ .nav-links li a:hover{
+   color: #4070f4;
+ }
+ nav.sticky .nav-links li a{
+   color: #fff;
+   transition: all 0.4s ease;
+}
+ nav.sticky .nav-links li a:hover{
+  color: #0E2431;
+}
+.home{
+  height: 100vh;
+  width: 100%;
+  background: url("images/fon.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+h2{
+  font-size: 30px;
+  margin-bottom: 6px;
+  color: #4070f4;
+}
+.text{
+  text-align: justify;
+  padding: 40px 80px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+.titre{
+	font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin: 10px 0;
+	text-align: center;
+ }
+ .element_gauche{
+	display: flex;
+	flex-grow: 1;
+	margin: 0px 5%;
+    padding: 30px ;
+	text-align: justify;
+	right: 60%;
+	line-height: 130%;
+	height: 100%;
+	width: 100%;
+}
+.element_droit{
+	display: flex;
+	flex-grow: 1;
+	margin: 0px 5%;
+    padding: 30px ;
+	text-align: justify;
+	left: 60%;
+	line-height: 130%;
+	height: 100%;
+	width: 100%;
+}
+.card {
+  perspective: 150rem;
+  height: 15rem;
+  width: 350px;
+  margin: 2rem;
+  box-shadow: none;
+  background: none;
+
+
+}
+
+.card-side {
+  height: 17rem;
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding:2rem;
+  color: white;
+
+
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+}
+
+.card-side.front {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
+}
+.cloche{
+	height: 17rem;
+	width: 270px;
+	border-radius: 15px;
+  margin-left: -27px;
+  margin-top: -32px;
+}
+.abc{
+	font-size: 25px;
+	text-align: center;
+	left: 50px;
+	color: #DB541A;
+	margin-left: 20%;
+
+}
+
+.content{
+	max-width: 1090px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  }
+   .content .cade{
+	background: #fff;
+	width: calc(33% - 20px);
+	text-align: center;
+	padding: 15px 30px  30px 0px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width:1000px) {
+	 .content .cade{
+	  background: #fff;
+	  width: calc(50% - 20px);
+	  margin-bottom: 30px;
+  }
+  }
+  @media (max-width:715px) {
+   .content .carde{
+	  width: 100%;
+  }
+  }
+  .posi{
+	width: 88px;
+	height: 88px;
+	vertical-align: middle;
+  }
+  .img_droite1{
+
+	margin-top: 180%;
+	width: 88px;
+	height: 88px;
+	margin-left: 50%;
+
+}
+.img_droite2{
+
+	margin-top: 135%;
+	width: 88px;
+	height: 88px;
+	margin-left: 50%;
+}
+.position {
+
+	width: 88px;
+	height: 88px;
+	vertical-align: middle;
+}
+.img_gauche1{
+	margin-top: 180%;
+	width: 88px;
+	height: 88px;
+	margin-left: 50%;
+}
+.img_gauche2{
+	margin-top: 135%;
+	width: 88px;
+	height: 88px;
+	margin-left: 50%;
+}
+.img_gauche3{
+	margin-top: 100%;
+	width: 88px;
+	height: 88px;
+	margin-left: 50%;
+}
