@@ -1,0 +1,146 @@
+
+body{
+    background-color: #012733;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 2.6rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4,h5{ 
+    font-size: 2.8rem;
+}
+li{
+    font-size: 1.8rem;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*header*/
+.connexion{
+    float: right;
+    display: flex;
+    list-style: none;
+   
+}
+.connexion li{
+    margin: 10px;
+}
+.main-head{
+    background: #011c24;
+    color: #ffffff;
+    
+    
+}
+nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 0.7rem;
+    
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+   justify-content: space-evenly ;
+    align-items: center;
+    list-style: none;
+}
+#logo{
+    flex: 2 1 2rem;
+ 
+}
+
+ /*Menu vertical*/
+
+ .wrapper{
+     display: flex;
+     background: #011c24;
+     width: 200px;
+     
+ }
+ .wrapper .sidebar{
+     
+    width: 200px;
+    background: #011c24;
+    padding: 30px 0;
+ }
+ .wrapper .sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+ }
+ .wrapper .sidebar ul li{
+     padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225 ,0.05);
+    list-style: none;
+    color: #fff;
+ }
+ .wrapper .sidebar ul li a{
+     color: #fff;
+     display: flexbox;
+ }
+ .wrapper .sidebar ul{
+     padding: 0;
+ }
+ .wrapper .sidebar ul li a .fas{
+     width: 25px;
+ }
+ .wrapper .sidebar ul li:hover{
+     background:  #044d63;
+    
+ }
+ .active{
+    background:  #044d63;   
+ }
+ .wrapper .sidebar ul li:hover a{
+     color:#fff,
+ }
+ 
+/*Page pricipale*/
+.fille{
+    flex-grow: 1;
+    background: #011c24;
+    margin: 0px 5%;
+    padding: 40px;
+    
+}
+.fille div{
+    font-size: 15px;
+    color: white;
+    display: none;
+}
+.mere{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    margin-bottom: 100px;
+}
+.light a span{
+    border-bottom: 2px solid #044d63;
+}
+.fille div.visible{
+    display: block;
+}
+.fille .content{
+    display: none;
+}
+.content .light{
+display: block;
+}
