@@ -63,7 +63,7 @@ nav .nav-bar{
     justify-content: space-between;
 }
 
-nav .nav-bar .sidebarOpen{
+nav .nav-bar .fa-bars{
     color: var(--text-color);
     font-size: 25px;
     padding: 5px;
