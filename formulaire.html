@@ -1,111 +1,155 @@
 <!DOCTYPE html>
 
-    <html lang="en">
+    <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Connexion </title>
         <link rel="stylesheet" href="css/style_formulaire.css">
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="font/css/all.css">
+        <link rel="stylesheet" href="font/svgs/solid">
                         
     </head>
     <body>
-        <section class="container forms">
-            <div class="form login">
-                <div class="form-content">
-                    <header>Login</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
 
-                        <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo navLogo"><a href="#">IMFConciergerie</a></span>
+    
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#">IMFConciergerie</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+    
+                    <ul class="nav-links"style="margin-left: 150px">
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="abonnement.html">Abonnements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <a href="formulaire.html" style="margin-left: 50px; color: white;"><figure><img src="images/login.png" alt="connexion" style="height: 30px; width: auto; "><figcaption></figcaption></figure>Login</a> 
+            
+                    </ul>
+                </div>
+    
+                <div class="darkLight-searchBox">
+                    <div class="dark-light">
+                        <i class="fa-solid fa-moon"></i>
+                       
+                    </div>
+    
+                    <div class="searchBox">
+                       <div class="searchToggle">
+                    
+                        <i class="fa-brands fa-searchengin"></i>
+                       </div>
+    
+                        <div class="search-field">
+                            <input type="text" placeholder="Search...">
+                            <i class="fa-brands fa-searchengin"></i>
+                            
+                           
                         </div>
-
-                        <div class="form-link">
-                            <a href="#" class="forgot-pass">Forgot password?</a>
-                        </div>
-
-                        <div class="field button-field">
-                            <button>Login</button>
-                        </div>
-                    </form>
-
-                    <div class="form-link">
-                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
                     </div>
                 </div>
-
-                <div class="line"></div>
-
-                <div class="media-options">
-                    <a href="#" class="field facebook">
-                        <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Login with Facebook</span>
-                    </a>
-                </div>
-
-                <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="images/google.png" alt="" class="google-img">
-                        <span>Login with Google</span>
-                    </a>
-                </div>
-
             </div>
+        </nav>
+        
 
-            <!-- Signup Form -->
-
-            <div class="form signup">
+        <div class="container">
+            <input type="checkbox" id="flip">
+            <div class="cover">
+              <div class="front">
+                <img src="images/img5.jpg" alt="">
+                <div class="text">
+                  <span class="text-1">Every new friend is a <br> new adventure</span>
+                  <span class="text-2">Let's get connected</span>
+                </div>
+              </div>
+              <div class="back">
+                <img class="backImg" src="images/backImg.jpg" alt="">
+                <div class="text">
+                  <span class="text-1">Complete miles of journey <br> with one step</span>
+                  <span class="text-2">Let's get started</span>
+                </div>
+              </div>
+            </div>
+            <div class="forms">
                 <div class="form-content">
-                    <header>Signup</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                  <div class="login-form">
+                    <div class="title">Connexion</div>
+                  <form action="#">
+                    <div class="input-boxes">
+                      <div class="input-box">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Entrer votre email" required>
+                      </div>
+                      <div class="input-box">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Entrer votre mot de passe" required>
+                      </div>
+                      <div class="text"><a style="color:#1550f1;" href="#">Mot de passe oublié ?</a></div>
+                      <div class="button input-box">
+                        <input type="submit" value="Envoyer">
+                      </div>
+                      <div class="text sign-up-text">Vous n'avez pas de compte ? <label for="flip">Inscription</label></div>
+                      <div class="line"></div>
+                      <div class="media-options">
+                            <a href="#" class="field facebook">
+                                
+                                <span>Connexion avec Facebook</span>
+                            </a>
                         </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
+                        <div class="media-options">
+                            <a href="#" class="field google">
+                                <img src="images/google.png" alt="" class="google-img">
+                                <span>Connexion avec Google</span>
+                            </a>
                         </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Confirm password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
-
-                        <div class="field button-field">
-                            <button>Signup</button>
-                        </div>
-                    </form>
-
-                    <div class="form-link">
-                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
                     </div>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="media-options">
-                    <a href="#" class="field facebook">
-                        <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Login with Facebook</span>
-                    </a>
-                </div>
-
-                <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="images/google.png" alt="" class="google-img">
-                        <span>Login with Google</span>
-                    </a>
-                </div>
-
+                </form>
+              </div>
+                <div class="signup-form">
+                  <div class="title">Inscription</div>
+                <form action="#">
+                    <div class="input-boxes">
+                      <div class="input-box">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Entrer votre nom" required>
+                      </div>
+                      <div class="input-box">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Entrer votre email" required>
+                      </div>
+                      <div class="input-box">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Entrer votre mot de passe" required>
+                      </div>
+                      <div class="button input-box">
+                        <input type="submit" value="Envoyer">
+                      </div>
+                      <div class="text sign-up-text">Avez vous un compte ? <label for="flip">Connexion</label></div>
+                      <div class="line"></div>
+                      <div class="media-options">
+                            <a href="#" class="field facebook">
+                                
+                                <span>Connexion avec Facebook</span>
+                            </a>
+                        </div>
+                        <div class="media-options">
+                            <a href="#" class="field google">
+                                <img src="images/google.png" alt="" class="google-img">
+                                <span>Connexion avec Google</span>
+                            </a>
+                        </div>
+                    </div>
+              </form>
             </div>
-        </section>
-
-        <!-- JavaScript -->
-        <script src="js/script.js"></script>
+            </div>
+            </div>
+          </div>
+          <script src="js/app.js"></script>
     </body>
 </html>
