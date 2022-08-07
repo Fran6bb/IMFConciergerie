@@ -5,13 +5,57 @@
     <title> Contact  | IMFConciergerie </title>
     <link rel="stylesheet" href="css/style_contact.css">
     <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="font/css/all.css">
+    <link rel="stylesheet" href="font/svgs/solid">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-<?php
-require ('header.php')
-?>
+
+  <nav>
+    <div class="nav-bar">
+      <i class="fa-solid fa-bars sidebarOpen"></i>
+        <span class="logo navLogo"><a href="#">IMFConciergerie</a></span>
+
+        <div class="menu">
+            <div class="logo-toggle">
+                <span class="logo"><a href="#">IMFConciergerie</a></span>
+                <i class='bx bx-x siderbarClose'></i>
+            </div>
+
+            <ul class="nav-links"style="margin-left: 150px">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="abonnement.html">Abonnements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+      <a href="formulaire.html" style="margin-left: 50px;"><figure><img src="images/login.png" alt="connexion" style="height: 30px; width: auto; "><figcaption></figcaption></figure>Login</a> 
+    
+            </ul>
+        </div>
+
+        <div class="darkLight-searchBox">
+            <div class="dark-light">
+                <i class="fa-solid fa-moon"></i>
+               
+            </div>
+
+            <div class="searchBox">
+               <div class="searchToggle">
+    
+                <i class="fa-brands fa-searchengin"></i>
+               </div>
+
+                <div class="search-field">
+                    <input type="text" placeholder="Search...">
+        <i class="fa-brands fa-searchengin"></i>
+        
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
   <div class="container">
     <div class="content">
       <div class="left-side">
@@ -54,6 +98,6 @@ require ('header.php')
     </div>
     </div>
   </div>
-
+  <script src="js/app.js"></script>
 </body>
 </html>
